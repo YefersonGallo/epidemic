@@ -149,7 +149,7 @@ function App() {
 
     return (
         <Grommet theme={customTheme}>
-            <Header background="background-back" pad="large" height="small">
+            <Header background={"light-4"} pad="large" height="small">
                 <Anchor
                     href="/"
                     icon={<img src={img} alt="" width={140}/>}
@@ -327,7 +327,9 @@ function App() {
                     </Pane>
                     <Pane hidden={flag}>
                         {
-                            images && <Pane display="flex" flexDirection={"column"} marginTop={"5%"} alignItems={"center"} marginLeft={"40%"} width={"40vw"}>
+                            images &&
+                            <Pane display="flex" flexDirection={"column"} marginTop={"5%"} alignItems={"center"}
+                                  marginLeft={"50%"} width={"40vw"}>
                                 <Text size={600}>Luego de la simulación se obtienen los siguientes resultados:</Text>
                                 <UnorderedList icon={TickIcon} iconColor="success">
                                     <ListItem>
@@ -399,7 +401,8 @@ function App() {
                                                 onClick={() => setReport2(true)}>Ver reporte 2</Button>
                                     </Pane>
                                 </Pane>
-                                <Button marginRight={12} marginTop={"5%"} height={56} appearance="primary" intent="none" isLoading={info}
+                                <Button marginRight={12} marginTop={"5%"} height={56} appearance="primary" intent="none"
+                                        isLoading={info}
                                         onClick={() => {
                                             setFlag(true)
                                         }}>
